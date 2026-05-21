@@ -1,0 +1,324 @@
+
+/* 全局样式 */
+QMainWindow {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/* 主窗口背景 */
+#MainWindow {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/* 分组框样式 */
+QGroupBox {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    padding: 15px;
+    margin: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+QGroupBox:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 15px;
+    padding: 0 8px 0 8px;
+    font-weight: bold;
+    color: #2196F3;
+    font-size: 16px;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "微软雅黑", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+QPushButton:pressed {
+    background-color: #1d4ed8;
+    transform: translateY(1px);
+}
+
+/* 特定按钮样式 */
+QPushButton#SaveBtn {
+    background-color: #10b981;
+}
+
+QPushButton#SaveBtn:hover {
+    background-color: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+QPushButton#ExitBtn {
+    background-color: #ef4444;
+}
+
+QPushButton#ExitBtn:hover {
+    background-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* 输入框样式 */
+QLineEdit {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+    font-size: 12px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+QLineEdit:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background-color: #f8fafc;
+    transform: translateY(-1px);
+}
+
+QLineEdit:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* 标签样式 */
+QLabel {
+    color: #374151;
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* 标题标签 */
+QLabel#label_3 {
+    color: #1e40af;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/* 表格样式 */
+QTableWidget {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: white;
+    gridline-color: #f1f5f9;
+    margin: 5px 0;
+    font-family: "微软雅黑", Arial, sans-serif;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+QTableWidget::header {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    font-weight: bold;
+    color: #1e40af;
+    border-bottom: 2px solid #3b82f6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+QTableWidget::item:selected {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* 组合框样式 */
+QComboBox {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+    font-size: 12px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+QComboBox:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* 框架样式 */
+QFrame {
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: none;
+    margin: 5px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+QFrame:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* 图像显示区域 */
+QLabel#label_show {
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    box-shadow: inset 0 0 15px rgba(59, 130, 246, 0.1);
+    margin: 10px;
+}
+
+
+
+/* 状态栏 */
+QStatusBar {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/* 文件导入区域 */
+QGroupBox#groupBox {
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+QGroupBox#groupBox::title {
+    color: #4CAF50;
+}
+
+/* 检测结果区域 */
+QGroupBox#groupBox_2 {
+    border: 1px solid rgba(33, 150, 243, 0.3);
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+QGroupBox#groupBox_2::title {
+    color: #2196F3;
+}
+
+/* 检测结果表格区域 */
+QGroupBox#groupBox_3 {
+    border: 1px solid rgba(156, 39, 176, 0.3);
+    box-shadow: 0 2px 8px rgba(156, 39, 176, 0.2);
+}
+
+QGroupBox#groupBox_3::title {
+    color: #9C27B0;
+}
+
+/* 操作区域 */
+QGroupBox#groupBox_4 {
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.2);
+}
+
+QGroupBox#groupBox_4::title {
+    color: #FF9800;
+}
+
+/* 图标按钮样式 */
+QPushButton#PicBtn, QPushButton#VideoBtn, QPushButton#CapBtn, QPushButton#FilesBtn {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+QPushButton#PicBtn:hover, QPushButton#VideoBtn:hover, QPushButton#CapBtn:hover, QPushButton#FilesBtn:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+QPushButton#PicBtn:pressed, QPushButton#VideoBtn:pressed, QPushButton#CapBtn:pressed, QPushButton#FilesBtn:pressed {
+    transform: scale(0.95);
+}
+
+/* 训练标签页样式 */
+QGroupBox#groupBox_data {
+    border: 1px solid rgba(33, 150, 243, 0.3);
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+QGroupBox#groupBox_data::title {
+    color: #2196F3;
+}
+
+QGroupBox#groupBox_config {
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+QGroupBox#groupBox_config::title {
+    color: #4CAF50;
+}
+
+QGroupBox#groupBox_train {
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.2);
+}
+
+QGroupBox#groupBox_train::title {
+    color: #FF9800;
+}
+
+/* 标签页控件样式 */
+QTabWidget {
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+QTabBar::tab {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "微软雅黑", Arial, sans-serif;
+    min-width: 80px;
+    transition: all 0.3s ease;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+    color: #1e40af;
+    border-color: #3b82f6;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+QTabBar::tab:hover {
+    background-color: #dbeafe;
+}
